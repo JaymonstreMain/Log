@@ -1,0 +1,21 @@
+public class Test {
+    public Test(){
+        //Logx (y)      --->     log10 (y) / log10 (x)
+        int x; //Petit nb
+        int y; //Grand nb
+        x = 3;
+        y = 2;
+        System.out.println("Le résultat de log" + x + "(" + y + ")" + " = ");
+        System.out.println(calculeLog(x, y));
+    }
+    private double calculeLog(double x, double y){
+    double resultat;
+    resultat = (Math.log(y)) / (Math.log(x));
+        return resultat;
+
+    }
+
+    public static void main(String[] args) {
+        new Test();
+    }
+}
